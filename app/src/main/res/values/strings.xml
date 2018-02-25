@@ -20,5 +20,9 @@
     <string name="dot">.</string>
     <string name="sqrt">"\u221A"</string>
     <string name="toggler">+/-</string>
-    
+    <string name="buttontextsize">20sp</string>
+    <string name="resulttextsize">60sp</string>
+
+
+
 </resources>
