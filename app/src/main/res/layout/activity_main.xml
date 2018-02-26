@@ -15,10 +15,11 @@
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center_vertical"
+            android:gravity="right"
             android:textSize="70sp"
             android:maxLines="1"
-            android:textDirection="rtl"
+            android:maxLength="10"
+            android:textDirection="anyRtl"
             android:textColor="@color/result"/>
     </LinearLayout>
     <LinearLayout
@@ -30,17 +31,19 @@
             android:id="@+id/result2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center_vertical"
+            android:gravity="right"
             android:textSize="40sp"
-            android:textDirection="rtl"
+            android:maxLength="10"
+            android:textDirection="anyRtl"
             android:textColor="@color/result"
-            android:text=""/>
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/buttonbg">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +57,7 @@
                 android:layout_weight="1"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
                 android:textSize="20sp"
-                android:onClick="buttonpress"/>
+                android:onClick="operand"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -63,7 +66,7 @@
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:textSize="20sp"
-                android:onClick="buttonpress"/>
+                android:onClick="operand"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -137,6 +140,7 @@
                 android:text="@string/number4"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
+                android:textSize="20sp"
                 android:onClick="buttonpress"/>
             <Button
                 android:layout_width="wrap_content"
