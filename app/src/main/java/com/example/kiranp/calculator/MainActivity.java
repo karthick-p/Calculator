@@ -288,10 +288,8 @@ public class MainActivity extends AppCompatActivity {
                 queue2.add(o);
             }
         }
-        if (!trial.isEmpty()) {
             trial = queue2;
             compute();
-        }
     }
 
     public void root()/*Square root function*/ {
